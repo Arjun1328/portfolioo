@@ -1,15 +1,16 @@
 export const navItems = [
   { name: "About", link: "#about" },
-  { name: "Projects", link: "#projects" },
-  { name: "Testimonials", link: "#testimonials" },
+  { name: "Skills", link: "#skills" },
+  { name: "Experience", link: "#experience" },
+  { name: "Certifications", link: "#certifications" },
   { name: "Contact", link: "#contact" },
 ];
 
 export const gridItems = [
   {
     id: 1,
-    title: "I prioritize client collaboration, fostering open communication ",
-    description: "",
+    title: "I am a third-year Diploma in Computer Engineering student passionate about web and software development",
+    description: "About Me",
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
     titleClassName: "justify-end",
@@ -18,8 +19,8 @@ export const gridItems = [
   },
   {
     id: 2,
-    title: "I'm very flexible with time zone communications",
-    description: "",
+    title: "I am eager to work with global, innovative engineering teams",
+    description: "Collaboration",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
     titleClassName: "justify-start",
@@ -38,18 +39,17 @@ export const gridItems = [
   },
   {
     id: 4,
-    title: "Tech enthusiast with a passion for development.",
-    description: "",
+    title: "I enjoy building clean, responsive, and user-friendly websites.",
+    description: "Design Philosophy",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
     titleClassName: "justify-start",
     img: "/grid.svg",
     spareImg: "/b4.svg",
   },
-
   {
     id: 5,
-    title: "Currently building a JS Animation library",
+    title: "Currently enhancing my skills through a MERN stack internship",
     description: "The Inside Scoop",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
@@ -59,8 +59,8 @@ export const gridItems = [
   },
   {
     id: 6,
-    title: "Do you want to start a project together?",
-    description: "",
+    title: "Let's connect and build something awesome!",
+    description: "Say Hello",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
     titleClassName: "justify-center md:max-w-full max-w-60 text-center",
@@ -72,68 +72,130 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
-    title: "3D Solar System Planets to Explore",
-    des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
+    title: "MERN Stack E-Commerce Platform",
+    des: "A fully functional e-commerce store with user authentication, product management, and a shopping cart utilizing React, Node.js, Express, and MongoDB.",
     img: "/p1.svg",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "/ui.earth.com",
+    github: "https://github.com/Arjun1328/mern-ecommerce",
+    liveDemo: "https://github.com/Arjun1328/mern-ecommerce", // placeholder
   },
   {
     id: 2,
-    title: "Yoom - Video Conferencing App",
-    des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
+    title: "Interactive Student Portal",
+    des: "An academic management portal enabling course registrations, grades viewing, and schedule management, built using Java and MySQL.",
     img: "/p2.svg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-    link: "/ui.yoom.com",
+    github: "https://github.com/Arjun1328/student-portal",
+    liveDemo: "https://github.com/Arjun1328/student-portal",
   },
   {
     id: 3,
-    title: "AI Image SaaS - Canva Application",
-    des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
+    title: "Automated Task Scheduler",
+    des: "A command-line and web-based task automation utility that schedules and tracks recurring tasks, developed in Python with SQLite.",
     img: "/p3.svg",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    link: "/ui.aiimg.com",
+    github: "https://github.com/Arjun1328/task-scheduler",
+    liveDemo: "https://github.com/Arjun1328/task-scheduler",
   },
   {
     id: 4,
-    title: "Animated Apple Iphone 3D Website",
-    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
+    title: "Instruction Set Simulator",
+    des: "A program that simulates executing Assembly language instructions, providing a visual registers display, written in C++.",
     img: "/p4.svg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "/ui.apple.com",
+    github: "https://github.com/Arjun1328/assembly-simulator",
+    liveDemo: "https://github.com/Arjun1328/assembly-simulator",
   },
 ];
 
-export const testimonials = [
+export const workExperience = [
   {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+    id: 1,
+    title: "Frontend & Full-Stack Intern",
+    desc: "Acquiring practical industry skills in CSS, JavaScript, and the MERN Stack during an intensive frontend internship, building responsive web interfaces.",
+    className: "md:col-span-2",
+    thumbnail: "/exp1.svg",
   },
   {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+    id: 2,
+    title: "Diploma in Computer Engineering",
+    desc: "Currently a third-year student learning computer hardware, data structures, databases, programming languages, and software engineering principles.",
+    className: "md:col-span-2",
+    thumbnail: "/exp4.svg",
   },
   {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+    id: 3,
+    title: "Secondary School Education (10th Grade)",
+    desc: "Completed 10th grade education, building a solid academic foundation to transition into technical computer science studies.",
+    className: "md:col-span-2",
+    thumbnail: "/exp2.svg",
   },
   {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+    id: 4,
+    title: "Freelance Web Developer",
+    desc: "Created custom responsive landing pages and interactive web tools for clients, using semantic HTML, CSS, and modern JavaScript.",
+    className: "md:col-span-2",
+    thumbnail: "/exp3.svg",
+  },
+];
+
+export const certificationsData = [
+  {
+    id: 1,
+    title: "MERN Stack Web Development Specialization",
+    issuer: "Internship Training Program",
+    date: "2026",
+    description: "Hands-on certification for developing and deploying database-driven single page applications using MongoDB, Express, React, and Node.js.",
   },
   {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+    id: 2,
+    title: "Programming Foundation in Java & Python",
+    issuer: "College Coding Academy",
+    date: "2025",
+    description: "Completed comprehensive coursework covering object-oriented programming, data structures, algorithms, and application design.",
+  },
+  {
+    id: 3,
+    title: "Web Development Bootcamp (HTML, CSS, JS)",
+    issuer: "Online Learning Platform",
+    date: "2024",
+    description: "Certified proficiency in semantic HTML layout, CSS animations, responsive layouts, vanilla JS DOM manipulation, and asynchronous API integration.",
+  },
+];
+
+export const skillsData = [
+  { name: "HTML", category: "Frontend" },
+  { name: "CSS", category: "Frontend" },
+  { name: "JavaScript", category: "Language" },
+  { name: "C", category: "Language" },
+  { name: "C++", category: "Language" },
+  { name: "Java", category: "Language" },
+  { name: "Python", category: "Language" },
+  { name: "Assembly", category: "Language" },
+  { name: "Git", category: "Tool" },
+  { name: "GitHub", category: "Tool" },
+];
+
+export const socialMedia = [
+  {
+    id: 1,
+    name: "GitHub",
+    link: "https://github.com/Arjun1328",
+  },
+  {
+    id: 2,
+    name: "LinkedIn",
+    link: "https://linkedin.com/in/arjun-bhor-diploma-computer-eng", // placeholder
+  },
+  {
+    id: 3,
+    name: "Email",
+    link: "mailto:arjunbhor1328@gmail.com",
+  },
+  {
+    id: 4,
+    name: "Instagram",
+    link: "https://instagram.com/arjun_bhor", // placeholder
   },
 ];
 
@@ -167,51 +229,5 @@ export const companies = [
     name: "docker.",
     img: "/dock.svg",
     nameImg: "/dockerName.svg",
-  },
-];
-
-export const workExperience = [
-  {
-    id: 1,
-    title: "Frontend Engineer Intern",
-    desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
-    className: "md:col-span-2",
-    thumbnail: "/exp1.svg",
-  },
-  {
-    id: 2,
-    title: "Mobile App Dev - JSM Tech",
-    desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
-    className: "md:col-span-2", // change to md:col-span-2
-    thumbnail: "/exp2.svg",
-  },
-  {
-    id: 3,
-    title: "Freelance App Dev Project",
-    desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
-    className: "md:col-span-2", // change to md:col-span-2
-    thumbnail: "/exp3.svg",
-  },
-  {
-    id: 4,
-    title: "Lead Frontend Developer",
-    desc: "Developed and maintained user-facing features using modern frontend technologies.",
-    className: "md:col-span-2",
-    thumbnail: "/exp4.svg",
-  },
-];
-
-export const socialMedia = [
-  {
-    id: 1,
-    img: "/git.svg",
-  },
-  {
-    id: 2,
-    img: "/twit.svg",
-  },
-  {
-    id: 3,
-    img: "/link.svg",
   },
 ];

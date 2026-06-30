@@ -43,26 +43,25 @@ const Hero = () => {
       <div className="flex justify-center relative my-20 z-10">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
           <p className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
-            Dynamic Web Magic with Next.js
+            Welcome to my Personal Portfolio
           </p>
 
-          {/**
-           *  Link: https://ui.aceternity.com/components/text-generate-effect
-           *
-           *  change md:text-6xl, add more responsive code
-           */}
           <TextGenerateEffect
-            words="Transforming Concepts into Seamless User Experiences"
-            className="text-center text-[40px] md:text-5xl lg:text-6xl"
+            words="ARJUN DEEPAK BHOR"
+            className="text-center text-[40px] md:text-6xl lg:text-7xl font-bold tracking-tight"
           />
 
-          <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-            Hi! I&apos;m Adrian, a Next.js Developer based in Croatia.
+          <p className="text-center md:tracking-wider mt-4 mb-4 text-sm md:text-lg lg:text-2xl font-medium text-purple">
+            Computer Engineering Student | Full Stack Web Developer | MERN Stack Learner
           </p>
 
-          <a href="#about">
+          <p className="text-center text-white-200 text-xs md:text-sm lg:text-base max-w-xl md:tracking-wide mb-6">
+            I am a third-year Diploma in Computer Engineering student passionate about web development and software development, continuously building interactive, responsive web applications.
+          </p>
+
+          <a href="#projects">
             <MagicButton
-              title="Show my work"
+              title="View Projects"
               icon={<FaLocationArrow />}
               position="right"
             />
