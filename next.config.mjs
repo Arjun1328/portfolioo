@@ -1,6 +1,17 @@
 import {withSentryConfig} from '@sentry/nextjs';
+const isGithubActions = process.env.GITHUB_ACTIONS === 'true';
+
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+  output: 'export',
+  basePath: isGithubActions ? '/portfolioo' : '',
+  images: {
+    unoptimized: true,
+  },
+  env: {
+    NEXT_PUBLIC_BASE_PATH: isGithubActions ? '/portfolioo' : '',
+  },
+};
 
 export default withSentryConfig(nextConfig, {
 // For all available options, see:

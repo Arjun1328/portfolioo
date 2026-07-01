@@ -3,6 +3,7 @@ import { IoMdMail } from "react-icons/io";
 
 import { socialMedia } from "@/data";
 import MagicButton from "./MagicButton";
+import { getAssetPath } from "@/lib/utils";
 
 const getIcon = (name: string) => {
   switch (name) {
@@ -25,7 +26,7 @@ const Footer = () => {
       {/* background grid */}
       <div className="w-full absolute left-0 -bottom-72 min-h-96">
         <img
-          src="/footer-grid.svg"
+          src={getAssetPath("/footer-grid.svg")}
           alt="grid"
           className="w-full h-full opacity-50 "
         />
