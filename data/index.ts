@@ -190,7 +190,7 @@ export const socialMedia = [
   {
     id: 3,
     name: "Email",
-    link: "mailto:arjunbhor1328@gmail.com",
+    link: "mailto:arjunbhora1@gmail.com",
   },
   {
     id: 4,
