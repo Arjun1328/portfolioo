@@ -1,5 +1,6 @@
 "use client";
-import { useEffect, useRef, useState } from "react";
+
+import { useEffect, useRef, useState, useMemo } from "react";
 import { Color, Scene, Fog, PerspectiveCamera, Vector3 } from "three";
 import ThreeGlobe from "three-globe";
 import { useThree, Object3DNode, Canvas, extend } from "@react-three/fiber";
@@ -27,7 +28,7 @@ type Position = {
   color: string;
 };
 
-export type GlobeConfig = {
+type GlobeConfig = {
   pointSize?: number;
   globeColor?: string;
   showAtmosphere?: boolean;
@@ -208,9 +209,9 @@ export function Globe({ globeConfig, data }: WorldProps) {
     const interval = setInterval(() => {
       if (!globeRef.current || !globeData) return;
       numbersOfRings = genRandomNumbers(
-        0,
-        data.length,
-        Math.floor((data.length * 4) / 5)
+          0,
+          data.length,
+          Math.floor((data.length * 4) / 5)
       );
 
       globeRef.current.ringsData(
@@ -237,15 +238,18 @@ export function WebGLRendererConfig() {
     gl.setPixelRatio(window.devicePixelRatio);
     gl.setSize(size.width, size.height);
     gl.setClearColor(0xffaaff, 0);
-  }, []);
+  }, [gl, size.width, size.height]);
 
   return null;
 }
 
 export function World(props: WorldProps) {
   const { globeConfig } = props;
-  const scene = new Scene();
-  scene.fog = new Fog(0xffffff, 400, 2000);
+  const scene = useMemo(() => {
+    const s = new Scene();
+    s.fog = new Fog(0xffffff, 400, 2000);
+    return s;
+  }, []);
   return (
     <Canvas scene={scene} camera={new PerspectiveCamera(50, aspect, 180, 1800)}>
       <WebGLRendererConfig />
