@@ -11,6 +11,10 @@ const nextConfig = {
   env: {
     NEXT_PUBLIC_BASE_PATH: isGithubActions ? '/portfolioo' : '',
   },
+  sentry: {
+    disableServerWebpackPlugin: !process.env.SENTRY_AUTH_TOKEN,
+    disableClientWebpackPlugin: !process.env.SENTRY_AUTH_TOKEN,
+  },
 };
 
 export default withSentryConfig(nextConfig, {
