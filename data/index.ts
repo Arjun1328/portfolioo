@@ -166,12 +166,16 @@ export const certificationsData = [
 export const skillsData = [
   { name: "HTML", category: "Frontend" },
   { name: "CSS", category: "Frontend" },
+  { name: "React", category: "Frontend" },
+  { name: "Node.js", category: "Backend" },
+  { name: "Express.js", category: "Backend" },
+  { name: "MongoDB", category: "Backend" },
   { name: "JavaScript", category: "Language" },
   { name: "C", category: "Language" },
   { name: "C++", category: "Language" },
   { name: "Java", category: "Language" },
   { name: "Python", category: "Language" },
-  { name: "Assembly", category: "Language" },
+  { name: "Assembly Language", category: "Language" },
   { name: "Git", category: "Tool" },
   { name: "GitHub", category: "Tool" },
 ];

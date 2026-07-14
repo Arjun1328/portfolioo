@@ -8,6 +8,7 @@ import Footer from "@/components/Footer";
 import Skills from "@/components/Skills";
 import Experience from "@/components/Experience";
 import Certifications from "@/components/Certifications";
+import RecentProjects from "@/components/RecentProjects";
 import { FloatingNav } from "@/components/ui/FloatingNavbar";
 
 const Home = () => {
@@ -17,6 +18,7 @@ const Home = () => {
         <FloatingNav navItems={navItems} />
         <Hero />
         <Grid />
+        <RecentProjects />
         <Skills />
         <Experience />
         <Certifications />
